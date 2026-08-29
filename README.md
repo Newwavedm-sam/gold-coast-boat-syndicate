@@ -7,4 +7,4 @@ Pages:
 - `boat.html` — boat details, videos and day-to-day logistics
 - `faq.html` — full FAQ
 
-Hosted on Vercel.
+Hosted on Vercel and connected to `main` for automatic deployments.
