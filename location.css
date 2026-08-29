@@ -1,0 +1,36 @@
+.location-hero{position:relative;overflow:hidden;min-height:560px;display:flex;align-items:center}
+.location-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 58%}
+.location-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,6,7,.98) 0%,rgba(4,6,7,.82) 48%,rgba(4,6,7,.35) 78%),linear-gradient(0deg,rgba(4,6,7,.6),transparent 60%);z-index:1}
+.location-hero .wrap{position:relative;z-index:2;padding:80px 0}
+.location-hero p{max-width:660px;color:#d3d8da;font-size:18px}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:30px}
+.step{background:#13181b;border:1px solid #30383c;border-radius:12px;padding:22px}
+.step i{display:grid;width:34px;height:34px;border-radius:50%;place-items:center;background:#a8e500;color:#101315;font-style:normal;font-weight:800;margin-bottom:14px}
+.step p{font-size:12px;color:#aeb6b8}
+.logistics-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;align-items:stretch}
+.logistics-panel{background:#111619;color:#fff;border-radius:14px;padding:34px;border:1px solid #2e3639}
+.logistics-panel h3{font-size:38px;margin-bottom:16px}
+.logistics-panel p{color:#b8c0c2}
+.logistics-points{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
+.logistics-point{background:#181e21;border:1px solid #30383c;border-radius:10px;padding:17px}
+.logistics-point b{display:block;color:var(--lime);font-family:"Barlow Condensed";font-size:23px;text-transform:uppercase}
+.logistics-point span{display:block;color:#aeb6b8;font-size:12px;line-height:1.5;margin-top:5px}
+.ramp-visual{min-height:460px;border-radius:14px;overflow:hidden;position:relative;background:url('/boat.jpg') center/cover}
+.ramp-visual:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,8,9,.92),rgba(5,8,9,.08) 62%)}
+.ramp-visual-copy{position:absolute;z-index:1;left:28px;right:28px;bottom:26px}
+.ramp-visual-copy h3{font-size:38px}
+.ramp-visual-copy p{color:#c8ced0;margin-bottom:0}
+.destination-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+.destination{background:#fff;border:1px solid #dce1db;border-radius:12px;padding:23px}
+.destination .distance{color:#64ad00;text-transform:uppercase;font-size:10px;font-weight:800;letter-spacing:.06em}
+.destination h3{font-size:28px;margin:9px 0 10px}
+.destination p{font-size:13px;color:#596164;margin:0}
+.destination.featured{background:#111619;border-color:#111619;color:#fff}
+.destination.featured p{color:#b8c0c2}
+.destination.featured .distance{color:var(--lime)}
+.travel-note{margin-top:18px;padding:20px 22px;border-radius:11px;background:#eef7d3;border:1px solid #cfe59a;color:#4f595b}
+.tow-callout{display:grid;grid-template-columns:.75fr 1.25fr;gap:34px;align-items:center;background:#111619;border:1px solid #30383c;border-radius:14px;padding:31px}
+.tow-callout p{color:#b8c0c2;margin:0}
+.tow-callout strong{color:#fff}
+@media(max-width:900px){.logistics-grid,.tow-callout{grid-template-columns:1fr}.destination-grid,.steps{grid-template-columns:1fr 1fr}.location-hero{min-height:520px}.location-hero .wrap{padding:70px 0}}
+@media(max-width:600px){.location-hero{min-height:510px}.location-hero .wrap{padding:58px 0}.location-hero h1{font-size:50px}.location-hero p{font-size:15px}.logistics-panel{padding:24px}.logistics-points,.destination-grid,.steps{grid-template-columns:1fr}.ramp-visual{min-height:360px}.tow-callout{padding:24px}}
